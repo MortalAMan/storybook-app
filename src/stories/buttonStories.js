@@ -7,17 +7,18 @@ storiesOf('Button', module)
   .add('with primary', () =>
     <Button
       label="Primary Button"
+      onClick={ action('click') }
       style={{ background: 'blue', border: 'red', cursor: 'pointer' }}
     />)
   .add('with outline', () =>
     <Button
       label="Outline Button"
-      style={{ background: 'transparent', border: '3px solid #fecd43', cursor: 'pointer' }}
+      style={{ background: 'gray', cursor: 'pointer' }}
     />)
   .add('with rounded corners', () =>
     <Button
       label="Rounded Button"
-      style={{ borderRadius: '15px', cursor: 'pointer' }}
+      style={{ background: 'green', borderRadius: '15px', cursor: 'pointer' }}
     />)
   .add('with text', () =>
     <Button
